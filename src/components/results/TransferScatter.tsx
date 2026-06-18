@@ -1,7 +1,6 @@
 import {
   CartesianGrid,
   Cell,
-  LabelList,
   ReferenceLine,
   ResponsiveContainer,
   Scatter,
@@ -102,12 +101,6 @@ export function TransferScatter({ metric, hidden }: { metric: Metric; hidden: Se
           {data.map((d) => (
             <Cell key={d.id} fill={d.color} stroke="#09090B" strokeWidth={1.5} />
           ))}
-          <LabelList
-            dataKey="name"
-            position="top"
-            offset={9}
-            style={{ fontSize: 11, fontFamily: "JetBrains Mono, monospace", fill: "#C8C8D0" }}
-          />
         </Scatter>
       </ScatterChart>
     </ResponsiveContainer>
